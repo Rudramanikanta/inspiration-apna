@@ -33,6 +33,7 @@
         .card:hover {
             transition: 0.9s;
             transform: rotateY(180deg);
+
         }
 
         .object:hover {
@@ -47,38 +48,134 @@
             background-color: aliceblue;
         }
 
-       /* .card-parent{
-        box-shadow: -10px -10px inset;
-        animation-name: anime;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-       }
-       @keyframes anime {
-        0%{
-            box-shadow: -10px -10px red;
+        .silde {
+            width: 100%;
+            transition: transform 1s;
         }
-        25%{
-            box-shadow: -10px -10px rgb(174, 255, 0);
+
+      
+        .roller {
+        
+            animation-name: rudra2;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
         }
-        50%{
-            box-shadow: -10px -10px rgb(124, 121, 121);
+
+        @keyframes rudra2 {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-200%);
+            }
         }
-        75%{
-            box-shadow: -10px -10px rgb(0, 128, 255);
+        .roller:hover{
+            animation-play-state: paused;
         }
-        0%{
-            box-shadow: -10px -10px red;
+        .slide:hover {
+            animation-play-state: stop;
         }
-       } */
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
-
-
-    
+<div style="overflow: hidden;">
+    <div class="roller" style="display: flex;">
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/1917.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/A_Quiet_Place.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/aaam.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/99.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/anupama2.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/24.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/aashiqui.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/bmb.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/bolt.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/arrow.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/cricket.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/captain.jpeg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/1917.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/A_Quiet_Place.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/aaam.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/99.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/anupama2.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2 slide">
+            <div style="padding: 20px;">
+                <img class="card-img-top" src="./Images/24.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
     <div class="containerfluid">
         <div class="card-md-12 card-parent"
             style="align-items: inherit ;justify-content: center;align-content: inherit;display: flex;padding: 50px;">
