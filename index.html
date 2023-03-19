@@ -51,8 +51,14 @@
         .silde {
             width: 100%;
             transition: transform 1s;
+            transform-style: ease-in;
         }
-
+        .slide:hover{
+            
+            transform: scale(1.2);
+            
+            
+        }
       
         .roller {
         
@@ -73,9 +79,7 @@
         .roller:hover{
             animation-play-state: paused;
         }
-        .slide:hover {
-            animation-play-state: stop;
-        }
+        
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -186,7 +190,7 @@
                         <div class="card-title">Fury</div>
                     </div>
                     <div class="cardbody">
-                        <button id="fury" class="btn btn-outline-success">Play</button>
+                        <button id="fury" class="btn btn-outline-success" value="fury">Play</button>
                     </div>
                 </div>
             </div>
@@ -200,7 +204,7 @@
                         <div class="card-title">Parasite</div>
                     </div>
                     <div class="cardbody">
-                        <button id="fury" class="btn btn-outline-success">Play</button>
+                        <button id="fury" class="btn btn-outline-success" value="parasite">Play</button>
                     </div>
                 </div>
             </div>
@@ -214,7 +218,7 @@
                         <div class="card-title">Breaking bad</div>
                     </div>
                     <div class="cardbody">
-                        <button id="fury" class="btn btn-outline-success">Play</button>
+                        <button id="fury" class="btn btn-outline-success" value="breakingbad">Play</button>
                     </div>
                 </div>
             </div>
@@ -231,7 +235,7 @@
                     <div class="card-title">dark knight</div>
                 </div>
                 <div class="cardbody">
-                    <button id="fury" class="btn btn-outline-success">Play</button>
+                    <button id="fury" class="btn btn-outline-success" value="darkkinght">Play</button>
                 </div>
             </div>
         </div>
@@ -245,7 +249,7 @@
                     <div class="card-title">always</div>
                 </div>
                 <div class="cardbody">
-                    <button id="fury" class="btn btn-outline-success">Play</button>
+                    <button id="fury" class="btn btn-outline-success" value="always">Play</button>
                 </div>
             </div>
         </div>
@@ -259,7 +263,7 @@
                     <div class="card-title">A Quiet place</div>
                 </div>
                 <div class="cardbody">
-                    <button id="fury" class="btn btn-outline-success">Play</button>
+                    <button id="fury" class="btn btn-outline-success" value="aquietplace">Play</button>
                 </div>
             </div>
         </div>
@@ -267,7 +271,7 @@
 
     </div>
     <div class="footer-middle">
-        <h2 class="footer-heading">Follow Us</h2>
+        <h2 class="footer-heading" style="color:aliceblue">Follow Us</h2>
         <div style="display: flex;">
             <a class="footer-links" href="https://www.facebook.com/" target="_blank">
                 <div class="facebook hov"
@@ -281,7 +285,7 @@
             </a>
             <a class="footer-links" href="https://www.instagram.com/" target="_blank">
                 <div class="instagram hov"
-                    style="height: fit-content;width: fit-content;padding: 10px;border-radius: 100px;"><i
+                    style="height: fit-content;width: fit-content;padding: 10px;border-radius: 200px;"><i
                         class="fab fa-instagram instagram" style="color:red"></i> </div>
             </a>
             <a class="footer-links" href="https://github.com/Rudramanikanta" target="_blank">
