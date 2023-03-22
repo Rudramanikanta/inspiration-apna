@@ -33,6 +33,6 @@ search.addEventListener("keyup", (event) => {
     }
 })
 function display(data){
-    document.getElementById("body").innerHTML=""
-    document.getElementById("body").appendChild(data)
+    document.getElementById("body2").innerHTML=""
+    document.getElementById("body2").appendChild(data)
 }
