@@ -17,7 +17,7 @@ divs.forEach((value) => {
 })
 setTimeout(() => {
     document.getElementById("spinner2").style.display = "none"
-}, 2000)
+}, 500)
 
 var search = document.getElementById("search")
 var cards = document.querySelectorAll(".card")
