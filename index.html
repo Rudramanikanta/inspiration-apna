@@ -5,433 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rudra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <style>
         body {
-            font-family: sans-serif;
-        }
-
-        img {
-            height: 150px;
-        }
-
-        body {
-            background-color: rgb(41, 41, 41);
-        }
-
-        .card {
-            background-color: rgb(230, 95, 95);
-
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-        }
-
-        .card:hover {
-            transition: 0.9s;
-            transform: rotateY(180deg);
-
-        }
-
-        .object:hover {
-            margin-top: -200px;
-        }
-
-        .cardbody {
-            transform: rotateY(180deg);
-        }
-
-        .hov:hover {
-            background-color: aliceblue;
-        }
-
-        .silde {
-            width: 100%;
-            transition: transform 1s;
-            transform-style: ease-in;
-        }
-
-        .slide:hover {
-
-            transform: scale(1.2);
-
-
-        }
-
-        .roller {
-
-            animation-name: rudra2;
-            animation-duration: 20s;
-            animation-iteration-count: infinite;
-        }
-
-        @keyframes rudra2 {
-            from {
-                transform: translateX(0);
-            }
-
-            to {
-                transform: translateX(-200%);
-            }
-        }
-
-        .roller:hover {
-            animation-play-state: paused;
-        }
-
-        .spinner {
-            background: #000 center center;
+            background-image: url('./Images/max.jpg');
+            background-size: cover;
             height: 100vh;
             width: 100%;
-            position: fixed;
-            z-index: 100;
-            ;
-        }
-        .card-parent{
-        align-items: inherit ;
-        justify-content: center;
-        align-content: inherit;
-        display: flex;
-        padding: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
-        @media only screen and (max-width: 600px) {
-           .card-parent{
-            display: block;
-           }
+        .container-login {
+            background-color: black;
+            height: 100vh;
+            width: 100%;
+            opacity: 0.7;
+        }
+
+        .log-in {
+            background-color: aliceblue;
+            opacity: 1;
+
         }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
 </head>
 
-<body id="body">
-    <div class="spinner" id="spinner2">
-        <div class="d-flex justify-content-center" style="margin-top: 25%;">
-            <div class="spinner-border text-danger" role="status">
-
-            </div>
-        </div>
-    </div>
-    <div class="parent">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">
-                            <h5> Home</h5> <span class="sr-only"></span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Web series</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <div class="dropdown" style="display: flex;">
-                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Category
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><button class="dropdown-item" type="button">kids</button></li>
-                                <li><button class="dropdown-item" type="button">crime</button></li>
-                                <li><button class="dropdown-item" type="button">thiller</button></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Movies</a>
-                    </li>
-                </ul>
-                <ul>
-
-                    <input class="form-control mr-sm-2" type="search" id="search" placeholder="Search"
-                        aria-label="Search">
-                </ul>
-                <ul>
-                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
-
-                </ul>
-            </div>
-        </nav>
-
-        <div style="overflow: hidden;">
-            <div class="roller" style="display: flex;">
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/1917.jpg" alt="">
-                    </div>
+<body>
+    <div class="container-login" style="align-items: center;align-content: center;top: 100px;">
+        <div class="card" style="width: 18rem;opacity: 100%; padding: 10px;top: 200px;left: 500px;align-items: center;align-content: center;box-shadow:5px 5px 5px red ;">
+            <div class="card-head"><h3>Log in</h3></div>
+            <div class="card-body" style="padding:10px">
+                <form action="home.html">
+                <div
+                    style="padding:6px;outline-color: rgb(29, 31, 33);outline-width: 1px;border: 1px solid;border-radius: 40px;height: fit-content;width: fit-content;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                      </svg>
+                    <input style="outline: none;border: 0px;" type="text" name="user" id="user" required>
                 </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/A_Quiet_Place.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/aaam.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/99.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/anupama2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/24.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/aashiqui.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/bmb.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/bolt.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/arrow.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/cricket.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/captain.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/1917.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/A_Quiet_Place.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/aaam.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/99.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/anupama2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-2 slide">
-                    <div style="padding: 20px;">
-                        <img class="card-img-top" src="./Images/24.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="containerfluid">
-            <div class="card-md-12 card-parent">
-                <div class="col-md-2 card" style="height: 200px;" name="fury">
-                    <div class="object">
-                        <img class="card-img-top" src="./Images/fury.jpg" alt="">
-                        <div class="card-body" style="padding: 20px;">
-                            <div class="card-title">Fury</div>
-                        </div>
-                        <div class="cardbody">
-                            <button id="fury" class="btn btn-outline-success" value="fury">Play</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-sm-4" style="height: 50px; width: 50px;">
-                    &nbsp;
-                </div>
-                <div class="col-md-2 card" style="height: 200px;" name="parasite">
-                    <div class="object">
-                        <img class="card-img-top" src="./Images/Parasite.jpg" alt="">
-                        <div class="card-body" style="padding: 20px;">
-                            <div class="card-title">Parasite</div>
-                        </div>
-                        <div class="cardbody">
-                            <button id="fury" class="btn btn-outline-success" value="parasite">Play</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-sm-4" style="height: 50px; width: 50px;">
-                    &nbsp;
-                </div>
-                <div class="col-sm-2 card" style="height: 200px;" name="breaking bad">
-                    <div class="object">
-                        <img class="card-img-top" src="./Images/breaking.jpg" alt="">
-                        <div class="card-body" style="padding: 20px;">
-                            <div class="card-title">Breaking bad</div>
-                        </div>
-                        <div class="cardbody">
-                            <button id="fury" class="btn btn-outline-success" value="breakingbad">Play</button>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-        <div class="card-md-12 card-parent">
-            <div class="col-md-2 card" style="height: 200px;" name="bolt">
-                <div class="object">
-                    <img class="card-img-top" src="./Images/bolt.jpg" alt="">
-                    <div class="card-body" style="padding: 20px;">
-                        <div class="card-title">bolt</div>
-                    </div>
-                    <div class="cardbody">
-                        <button id="fury" class="btn btn-outline-success" value="bolt">Play</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-sm-4" style="height: 50px; width: 50px;">
-                &nbsp;
-            </div>
-            <div class="col-md-2 card" style="height: 200px;" name="1917">
-                <div class="object">
-                    <img class="card-img-top" src="./Images/1917.jpg" alt="">
-                    <div class="card-body" style="padding: 20px;">
-                        <div class="card-title">1917</div>
-                    </div>
-                    <div class="cardbody">
-                        <button id="fury" class="btn btn-outline-success" value="1917">Play</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-sm-4" style="height: 50px; width: 50px;">
-                &nbsp;
-            </div>
-            <div class="col-sm-2 card aquiet" style="height: 200px;" name="Attack">
-                <div class="object">
-                    <img class="card-img-top" src="./Images/Attack.jpg" alt="">
-                    <div class="card-body" style="padding: 20px;">
-                        <div class="card-title">Attack</div>
-                    </div>
-                    <div class="cardbody">
-                        <button id="fury" class="btn btn-outline-success" value="attack">Play</button>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="card-md-12 card-parent">
-            <div class="col-md-2 card" style="height: 200px;" name="dark kinght">
-                <div class="object">
-                    <img class="card-img-top" src="./Images/dark knight.jpg" alt="">
-                    <div class="card-body" style="padding: 20px;">
-                        <div class="card-title">dark knight</div>
-                    </div>
-                    <div class="cardbody">
-                        <button id="fury" class="btn btn-outline-success" value="darkkinght">Play</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-sm-4" style="height: 50px; width: 50px;">
-                &nbsp;
-            </div>
-            <div class="col-md-2 card" style="height: 200px;" name="always">
-                <div class="object">
-                    <img class="card-img-top" src="./Images/always.jpg" alt="">
-                    <div class="card-body" style="padding: 20px;">
-                        <div class="card-title">always</div>
-                    </div>
-                    <div class="cardbody">
-                        <button id="fury" class="btn btn-outline-success" value="always">Play</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-sm-4" style="height: 50px; width: 50px;">
-                &nbsp;
-            </div>
-            <div class="col-sm-2 card aquiet" style="height: 200px;" name="a Quiet Place">
-                <div class="object">
-                    <img class="card-img-top" src="./Images/A_Quiet_Place.jpg" alt="">
-                    <div class="card-body" style="padding: 20px;">
-                        <div class="card-title">A Quiet place</div>
-                    </div>
-                    <div class="cardbody">
-                        <button id="fury" class="btn btn-outline-success" value="aquietplace">Play</button>
-                    </div>
-                </div>
-            </div>
-
-
-        </div style="background-color: #222121;">
-        <div class="footcontainer" style="display:flex;background-color: #222121;">
-            <div class="footer-middle" style="background-color: #222121;">
-                <h3 class="footer-heading" style="color:aliceblue;font-family: fantasy;">Follow Us</h3>
                 <br>
-                <div style="display: flex;">
-                    <a class="footer-links" href="https://www.facebook.com/" target="_blank">
-                        <div class="facebook hov"
-                            style="height: fit-content;width: fit-content;padding: 10px;border-radius: 200px;"><i
-                                class="fab fa-facebook-f facebook" style="color:red"></i></div>
-                    </a>
-                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank">
-                        <div class="linkedin hov"
-                            style="height: fit-content;width: fit-content;padding: 10px;border-radius: 100px;"><i
-                                class="fab fa-linkedin linkedin" style="color:red"></i></div>
-                    </a>
-                    <a class="footer-links" href="https://www.instagram.com/" target="_blank">
-                        <div class="instagram hov"
-                            style="height: fit-content;width: fit-content;padding: 10px;border-radius: 200px;"><i
-                                class="fab fa-instagram instagram" style="color:red"></i> </div>
-                    </a>
-                    <a class="footer-links" href="https://github.com/Rudramanikanta" target="_blank">
-                        <div class="github hov"
-                            style="height: fit-content;width: fit-content;padding: 10px;border-radius: 100px;"><i
-                                class="fab fa-github github" style="color:rgba(209, 142, 42, 0.822)"></i>
-                        </div>
-                    </a>
-                </div>
-
+                <div
+                style="padding:6px;outline-color: rgb(29, 31, 33);outline-width: 1px;border: 1px solid;border-radius: 40px;height: fit-content;width: fit-content;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-lock" viewBox="0 0 16 16">
+                    <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h5v-1a1.9 1.9 0 0 1 .01-.2 4.49 4.49 0 0 1 1.534-3.693C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Zm7 0a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-2Zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1Z"/>
+                  </svg>
+                <input style="outline: none;border: 0px;" type="password" name="user" id="user" required>
             </div>
-            <div class="footer-copyright" style="align-items: end; padding-top: 100px;padding-left: 300px;">
-                <p color="white" style="color: aliceblue;">Copyright &copy; and &reg; Since
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>Rudra mani kanta
-                </p>
+      
+            <br>
+                <button class="btn btn-outline-danger" style="margin-left:60px">submit</button>
             </div>
+        </form>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
